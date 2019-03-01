@@ -1,0 +1,32 @@
+## Created with gatsby-plugin-netlify
+
+/*
+  X-Frame-Options: DENY
+  X-XSS-Protection: 1; mode=block
+  X-Content-Type-Options: nosniff
+/static/*
+  Cache-Control: max-age=31536000
+/offline-plugin-app-shell-fallback/
+  Link: </commons-1aa6e14eaa86532cae61.js>; rel=preload; as=script
+  Link: </app-beccbab131a5b1695b45.js>; rel=preload; as=script
+  Link: </path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js>; rel=preload; as=script
+  Link: </component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js>; rel=preload; as=script
+/blog/ddlink/
+  Link: </commons-1aa6e14eaa86532cae61.js>; rel=preload; as=script
+  Link: </app-beccbab131a5b1695b45.js>; rel=preload; as=script
+  Link: </path---blog-ddlink-ba470fb0f4464ab14e52.js>; rel=preload; as=script
+  Link: </component---src-templates-post-jsx-ac04a45dee9eaf1b2074.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js>; rel=preload; as=script
+/about/
+  Link: </commons-1aa6e14eaa86532cae61.js>; rel=preload; as=script
+  Link: </app-beccbab131a5b1695b45.js>; rel=preload; as=script
+  Link: </path---about-2ea580a0aef958e9754c.js>; rel=preload; as=script
+  Link: </component---src-templates-about-jsx-bfe50b4acb91eaa3bf42.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js>; rel=preload; as=script
+/
+  Link: </commons-1aa6e14eaa86532cae61.js>; rel=preload; as=script
+  Link: </app-beccbab131a5b1695b45.js>; rel=preload; as=script
+  Link: </path---index-f83487666702507e4cb6.js>; rel=preload; as=script
+  Link: </component---src-pages-index-jsx-2c0d86d31efa6acf86e2.js>; rel=preload; as=script
+  Link: </component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js>; rel=preload; as=script

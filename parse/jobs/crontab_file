@@ -1,0 +1,2 @@
+0 */2 * * * /root/jobs/exec_getVideo.sh
+0 */3 * * * /root/jobs/exec_getAlbum.sh

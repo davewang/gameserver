@@ -1,0 +1,280 @@
+randomjoin 2 {
+	request {
+		group 0 : string
+	}
+	response {
+		session 0 : integer
+		host 1 : string
+		port 2 : integer
+		start 3 : boolean
+	}
+}
+leave 4 {
+	request {
+		uid 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+.player {
+		username 0 : string
+		nickname 1 : string
+		level 2 : integer
+		avatarid 3 : integer
+}
+notify 5 {
+	request {
+		players 0 : *player
+	}
+	response {
+		players 0 : *player
+	}
+}
+matchnotify 6{
+	request {
+     uid 0 : string
+  }
+	response {
+     players 0 : *player
+  }
+
+}
+.group {
+		id 0 : string
+		count 1 : integer
+}
+onlineinfo 7 {
+	request {
+		uid 0 : string
+	}
+	response {
+		groups 0 : *group
+	}
+}
+.user {
+		username 0 : string
+		nickname 1 : string
+		coin 2 : integer
+		avatarid 3 : integer
+		avatarurl 4 : string
+		platform 5: string
+		level 6 : integer
+		xp 7 : integer
+		score 8 : integer
+		win 9 : integer
+		lose 10 : integer
+		fixnickname 11 : integer 
+	    isablesendgift 12 : boolean
+		pay_times 13 : integer
+
+}
+userinfo 8 {
+	request {
+    username 0 : string
+  }
+	response {
+		user 0 : user
+  }
+}
+.item {
+  id 0 : integer
+  coin_count 1 : integer
+  day 2 : integer
+  state 3 : integer
+}
+daily 9 {
+	request {
+    username 0 : string
+  }
+	response {
+		items 0 : *item
+  }
+}
+.goods {
+  id 0 : integer
+	price 1: integer
+	coin_count 2 : integer
+	product_uid 3 : string
+	price_en 4 : string
+}
+product 10{
+	request {
+		username 0 : string
+	}
+	response {
+		goods 0 : *goods
+	}
+}
+
+friendrank 11{
+	request {
+		username 0 : string
+	}
+	response {
+		ranks 0 : *user
+	}
+}
+
+scorerank 12{
+	request {
+		username 0 : string
+	}
+	response {
+		ranks 0 : *user
+	}
+}
+worldrank 13{
+	request {
+		username 0 : string
+	}
+	response {
+		ranks 0 : *user
+	}
+}
+
+.message {
+	id 0 : integer
+	title 1 : string
+	content 2 : string
+	sendname 3 : string
+	receiverid 4 : string
+	extatt 5 : string
+	sendtime 6 : integer
+	sendid 7 : string
+	state 8 : integer
+}
+inbox 14{
+	request {
+		type 0 : integer
+	}
+	response {
+		messages 0 : *message
+	}
+}
+delmessage 15{
+	request {
+		id 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+}
+edituser 16{
+	request {
+		user 0 : user
+	}
+	response {
+		result 0 : string
+	}
+}
+
+checkdaily 17{
+	request {
+		username 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+signdaily 18{
+	request {
+		day 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+}
+readmessage 19{
+	request {
+		id 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+}
+haveureadmessage 20{
+	request {
+		username 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+readallmessagebytype 21{
+	request {
+		type 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+}
+recvall 22{
+    request {
+		type 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+} 
+addCoin 23{
+    request {
+		count 0 : integer
+		type 1  : integer
+		p_id 2 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+editnikename 24{
+	request {
+		nickname 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+sendgift 25{
+	request {
+		friendname 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+addfriend 26{
+	request {
+		friendname 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+isfriend 27{
+	request {
+		friendname 0 : string
+	}
+	response {
+		result 0 : boolean
+	}
+}
+updatescore 28{
+	request {
+		score 0 : integer
+	}
+	response {
+		result 0 : boolean
+	}
+}
+register 29{
+	request {
+		username 0 : string
+		password 1 : string
+		platform 2 : string
+	}
+	response {
+		result 0 : boolean
+		msg 1 : string
+	}
+}

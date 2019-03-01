@@ -1,0 +1,78 @@
+[:00000001] LAUNCH logger ./skynet.log
+[:00000002] LAUNCH snlua bootstrap
+[:00000003] LAUNCH snlua launcher
+[:00000004] LAUNCH snlua cdummy
+[:00000005] LAUNCH harbor 0 4
+[:00000006] LAUNCH snlua datacenterd
+[:00000007] LAUNCH snlua service_mgr
+[:00000008] LAUNCH snlua main
+[:00000009] LAUNCH snlua console
+[:00000009] lua call [0 to :9 : 0 msgsz = 24] error : [31mskynet/lualib/skynet.lua:537: skynet/lualib/skynet.lua:161: skynet/lualib/socket.lua:331: assertion failed!
+stack traceback:
+	[C]: in function 'assert'
+	skynet/lualib/socket.lua:331: in function 'socket.lock'
+	skynet/service/console.lua:6: in upvalue 'func'
+	skynet/lualib/skynet.lua:482: in upvalue 'f'
+	skynet/lualib/skynet.lua:105: in function <skynet/lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	skynet/lualib/skynet.lua:537: in function <skynet/lualib/skynet.lua:519>[0m
+[:0000000a] LAUNCH snlua debug_console 8000
+[:0000000a] Start debug console at 127.0.0.1 8000
+[:0000000b] LAUNCH snlua snaxd usermgr
+[:0000000c] LAUNCH snlua snaxd roomkeeper
+[:0000000c] port = 9999
+[:0000000d] LAUNCH snlua snaxd tcpserver
+[:0000000e] LAUNCH snlua snaxd frienddb
+[:0000000f] LAUNCH snlua snaxd giftmark
+[:00000010] LAUNCH snlua snaxd userdb
+[:00000011] LAUNCH snlua snaxd inboxdb
+[:00000012] LAUNCH snlua snaxd league
+[:00000012] update ranks = 24
+[:00000012] update ranks = 24
+[:00000012] 2 house after update ranks  2019-02-05 12:52:19
+[:00000013] LAUNCH snlua snaxd blocks
+[:00000014] LAUNCH snlua logind
+[:00000015] LAUNCH snlua logind
+[:00000016] LAUNCH snlua logind
+[:00000017] LAUNCH snlua logind
+[:00000018] LAUNCH snlua logind
+[:00000019] LAUNCH snlua logind
+[:0000001a] LAUNCH snlua logind
+[:0000001b] LAUNCH snlua logind
+[:0000001c] LAUNCH snlua logind
+[:00000014] login server listen at : 0.0.0.0 8001
+[:0000001d] LAUNCH snlua gated 20
+[:0000001e] LAUNCH snlua snaxd httpserver
+[:0000001f] LAUNCH snlua httpserver httpagent
+[:00000020] LAUNCH snlua httpserver httpagent
+[:00000021] LAUNCH snlua httpserver httpagent
+[:00000022] LAUNCH snlua httpserver httpagent
+[:00000023] LAUNCH snlua httpserver httpagent
+[:0000001e] http host = 0.0.0.0
+[:0000001e] Listen web port 8002
+[:0000001d] Listen on 0.0.0.0:8888
+[:0000001d] register_handler sample 
+[:00000008] KILL self
+[:00000002] KILL self
+[:00000015] connect from 101.30.55.134:1574 (fd = 11)
+[:00000015] lua call [0 to :15 : 0 msgsz = 24] error : [31mskynet/lualib/skynet.lua:537: skynet/lualib/skynet.lua:161: skynet/lualib/snax/loginserver.lua:94: skynet/lualib/snax/loginserver.lua:63: Invalid base64 text
+stack traceback:
+	[C]: in function 'error'
+	skynet/lualib/snax/loginserver.lua:94: in upvalue 'ret_pack'
+	skynet/lualib/snax/loginserver.lua:99: in upvalue 'f'
+	skynet/lualib/skynet.lua:110: in function <skynet/lualib/skynet.lua:104>
+stack traceback:
+	[C]: in function 'assert'
+	skynet/lualib/skynet.lua:537: in function <skynet/lualib/skynet.lua:519>[0m
+[:00000014] invalid client (fd = 11) error = skynet/lualib/skynet.lua:408: stack traceback:
+	skynet/lualib/skynet.lua:408: in upvalue 'yield_call'
+	skynet/lualib/skynet.lua:419: in function 'skynet.call'
+	skynet/lualib/snax/loginserver.lua:107: in function <skynet/lualib/snax/loginserver.lua:105>
+	[C]: in function 'pcall'
+	skynet/lualib/snax/loginserver.lua:161: in field 'callback'
+	skynet/lualib/socket.lua:105: in field '?'
+	skynet/lualib/socket.lua:141: in upvalue 'f'
+	skynet/lualib/skynet.lua:110: in function <skynet/lualib/skynet.lua:104>
+[:0000001e] 101.30.55.134:1577 connected, pass it to agent :0000001f
+[:0000001f] skynet/lualib/http/httpd.lua:58: assertion failed!

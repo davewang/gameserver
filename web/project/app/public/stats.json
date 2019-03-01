@@ -1,0 +1,54 @@
+{
+  "assetsByChunkName": {
+    "path---": [
+      "path----557518bd178906f8d58a.js",
+      "path----557518bd178906f8d58a.js.map"
+    ],
+    "component---src-templates-about-jsx": [
+      "component---src-templates-about-jsx-bfe50b4acb91eaa3bf42.js",
+      "component---src-templates-about-jsx-bfe50b4acb91eaa3bf42.js.map"
+    ],
+    "component---src-layouts-index-jsx": [
+      "component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js",
+      "component---src-layouts-index-jsx-6c57d8bc8b3f70e0f239.js.map"
+    ],
+    "component---node-modules-gatsby-plugin-offline-app-shell-js": [
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js",
+      "component---node-modules-gatsby-plugin-offline-app-shell-js-5c4c5a0f7af9dc69d6d7.js.map"
+    ],
+    "path---index": [
+      "path---index-f83487666702507e4cb6.js",
+      "path---index-f83487666702507e4cb6.js.map"
+    ],
+    "path---blog-ddlink": [
+      "path---blog-ddlink-ba470fb0f4464ab14e52.js",
+      "path---blog-ddlink-ba470fb0f4464ab14e52.js.map"
+    ],
+    "commons": [
+      "commons-1aa6e14eaa86532cae61.js",
+      "commons-1aa6e14eaa86532cae61.js.map"
+    ],
+    "path---offline-plugin-app-shell-fallback": [
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js",
+      "path---offline-plugin-app-shell-fallback-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-templates-post-jsx": [
+      "component---src-templates-post-jsx-ac04a45dee9eaf1b2074.js",
+      "component---src-templates-post-jsx-ac04a45dee9eaf1b2074.js.map"
+    ],
+    "component---src-pages-index-jsx": [
+      "component---src-pages-index-jsx-2c0d86d31efa6acf86e2.js",
+      "component---src-pages-index-jsx-2c0d86d31efa6acf86e2.js.map"
+    ],
+    "app": [
+      "app-beccbab131a5b1695b45.js",
+      "build-js-styles.css",
+      "app-beccbab131a5b1695b45.js.map",
+      "build-js-styles.css.map"
+    ],
+    "path---about": [
+      "path---about-2ea580a0aef958e9754c.js",
+      "path---about-2ea580a0aef958e9754c.js.map"
+    ]
+  }
+}
